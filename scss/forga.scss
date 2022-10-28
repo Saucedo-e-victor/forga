@@ -1,0 +1,78 @@
+*{padding: 0;
+margin: 0;
+
+}
+@import "menu01";
+@import "logos";
+@import "hover-top-bottom";
+
+$colorbg: black;
+
+
+
+
+
+
+.titulo1{display: flex;
+    
+    position: relative;
+    justify-content:center;
+    align-content: center;
+    font-size: 70px;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    
+    color: rgb(247, 238, 238);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.menu{
+    background-color: rgb(236, 42, 42);
+}
+$carousel-caption-width: 70%;
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    color: #b8c1ec;
+    height: 100vh;
+
+
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+    color: #b8c1ec;
+    padding: 10px;
+    font-size: 18px;
+    height: 100%;
+    padding: 10px;
+}
+.izquierda{
+        
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        color: #b8c1ec;
+        padding: 10px;
+        font-size: 18px;
+        position: relative;
+        padding: 10px;
+    
+}
+.imagen_derecha{display:grid;
+                max-width: 100%;
+
+}
+.derecha{
+    
+    
+    background-size: cover;
+    color: #050e38;
+    font-size: 18px;
+    
+    
+    
+}

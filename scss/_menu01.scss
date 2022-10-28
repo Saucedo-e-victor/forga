@@ -1,0 +1,133 @@
+$rojo: #fd1c14;
+ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    li {
+        list-style: none;
+        padding: 5px;
+        position: relative;
+        a{color: rgb(230, 217, 217);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+    } 
+
+}
+
+.nav-bar{
+    background-color: #0a0a0a;
+    display: flex;
+
+
+}
+.navbar{
+    background-color: #050000;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+
+.link{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 28px;
+    width: fit-content;
+    z-index: 0;
+    transition: all 450ms ease;
+    border-radius: 10px;
+    margin: 2px;
+    text-shadow: 5px 5px 5px rgba(223, 32, 32, 0.438);
+
+    &::after,
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        transition: width 540ms, opacity 300ms ease;
+    }
+}
+
+.link{
+    height: 56px;
+    width: 164px;
+    display: grid;
+    place-items: center;
+
+    &-b-tr,
+    &-b-bl{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: $rojo;
+            transition: all 400ms ease-in-out;
+        }
+    }
+
+    &-b-tr::before{
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+    }
+
+    &-b-tr::after{
+        right: 0;
+        top: 0;
+        height: 0;
+        width: 1px;
+    }
+
+    &-b-bl::before{
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 1px;
+    }
+
+    &-b-bl::after{
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 1px;
+    }
+
+    &:hover{
+        color: $rojo;
+
+        .link-b-tr::before,
+        .link-b-bl::before{
+            width: 100%;
+        }
+
+        .link-b-tr::after,
+        .link-b-bl::after{
+            height: 100%;
+        }
+    }
+}
+@keyframes width{
+    0%{
+        width: 0;
+    }
+
+    50%{
+        width: 100%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
