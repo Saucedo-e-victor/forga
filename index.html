@@ -19,96 +19,42 @@
 </head>
 <body>
       <!-- --header-- -->
-      <header class="container-fluid- sticky-md-top">
-              <div class="row col-md-6-col-md-pull-6">
+      <header class="container-fluid- fixed-ms-top" class="carousel_menu">
+              <div class="row col-md-9-col-sm pull-12">
                     <div class="col">
-                          <div class="titulo1">
+                          <div class="titulo1 justify-content-center">
                               <img src="./image/yunque icono.png" class="logo01" class="img-fluid" alt="logo" width="100" height="100">
                               <h1>Historia de la Herreria</h1>
                           </div>
                     </div>
-              <div class="container-fluid fixed-top">
-                      <ul class="boton1 justify-content-end">
-                      <li><a class="btn " href="./page/armaduras.html" button type="button">Armaduras<img class="iconos" src="./image/matillo.png" alt="link page armadura"></a></li>
-                      <li><a class="btn " href="./page/videos.html" button type="button">videos<img class="iconos" src="./image/matillo.png" alt="link page Inicio"></a></li>
-                      <li><a class="btn " href="./page/espadas.html" button type="button">espadas<img class="iconos" src="./image/yunque icono.png" alt="link page espadas"></a></li>
-                      <li><a class="btn " href="./page/history.html" button type="button">Historia<img class="iconos" src="./image/matillo.png" alt="link page historia"></a></li>
-                      </ul>
-              </div>
-              <!----- nav-- -->
-      <div class="conteiner">
-          <div class="row">
-            <div class="col">
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" class="d-block w-100" alt="carousel-control-next-icon">
-                    <nav class="navbar">
-                      <form class="container-fluid justify-content-center">
-                        <ul>
-                        <li class="nav-item">
-                          <a href="./index.html" button type="button" class="link btn-dark">Inicio</a>
-                        </li>
-                        </ul>
-                      </form>
+                    <!-- sub menu nav -->
+                    <nav class="navbar navbar-expand-lg bg-light">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="/index.html" button type="button"><img class="iconos" src="./image/yunque icono.png" alt="Inicio"></a></li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav sub_menu">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="../page/armaduras.html" button type="button">Armaduras<img class="iconos" src="../image/matillo.png" alt="link page armadura"></a></li>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link boton1" href="./page/videos.html" button type="button">videos<img class="iconos" src="./image/matillo.png" alt="link page Inicio"></a></li>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link boton1" href="./page/espadas.html" button type="button">espadas<img class="iconos" src="./image/yunque icono.png" alt="link page espadas"></a></li>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link boton1" href="./page/history.html" button type="button">Historia<img class="iconos" src="./image/matillo.png" alt="link page historia"></a></li>
+                            </li>
+                        </div>
+                      </div>
                     </nav> 
-                  </div>
-                  <div class="carousel-item" class="d-block w-100" alt="...">
-                    <nav class="navbar">
-                      <form class="container-fluid justify-content-center">
-                        <ul>
-                          <li class="nav-item">
-                            <a href="./page/armaduras.html" button type="button" class="link btn-dark">armaduras</a>
-                          </li>
-                        </ul>
-                      </form>
-                    </nav> 
-                  </div>
-                  <div class="carousel-item" class="d-block w-100" alt="...">
-                    <nav class="navbar">
-                      <form class="container-fluid justify-content-center">
-                        <ul>
-                          <li class="nav-item">
-                            <a href="./page/espadas.html" button type="button" class="link btn-dark">espadas</a>
-                        </li>
-                        </ul>
-                      </form>
-                    </nav> 
-                  </div>
-                  <div class="carousel-item" class="d-block w-100" alt="...">
-                    <nav class="navbar">
-                      <form class="container-fluid justify-content-evenly">
-                        <ul>
-                        <li class="nav-item">
-                          <a href="./page/videos.html" button type="button" class="link btn-dark">videos</a>
-                        </li>
-                        </ul>
-                      </form>
-                    </nav> 
-                  </div>
-                  <div class="carousel-item" class="d-block w-100" alt="...">
-                    <nav class="navbar">
-                      <form class="container-fluid justify-content-center">
-                        <ul>
-                        <li class="nav-item">
-                          <a href="./page/history.html" button type="button" class="link btn-dark">historia</a>
-                        </li>
-                        </ul>
-                      </form>
-                    </nav> 
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-      </div>      
+              <!----- nav-- -->
+            
 </header>
 <main class="container-fluid-pt-3 bg-black">
 <div class="container-fluid text-center">
@@ -165,17 +111,14 @@
 </main>
 
 
-<footer class="container-fluid">
-      <div class="row fixed-bottom">
+<footer class="container-fluid menu_footer">
+      <div class="row d-flex flex-sm-row">
         <div class="col">
-              <ul class="boton2 justify-content-
-               mt-1">
+              <ul class="boton2">
+              <li><a class="flex-sm-fill" href="https://es-la.facebook.com/" role="button"><img class="iconos" src="./image/facebook.png" alt="Facebook iconos creados por Hight Quality Icons"></a></li>
+              <li><a class=" flex-sm-fill" href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fabout.instagram.com%2Fes-la%2F" role="button"><img class="iconos" src="./image/instagram.png" alt="Instragram iconos creados por Hight Quality Icons"></a></li>
               
-              <li><a class="btn btn-sm" href="https://es-la.facebook.com/" role="button">Facebook<img class="iconos" src="./image/matillo.png" alt="Facebook"></a></li>
-              <li><a class="btn btn-sm" href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fabout.instagram.com%2Fes-la%2F" role="button">Instragram<img class="iconos" src="./image/matillo.png" alt="Mail"></a></li>
-              
-              <li><a class="btn " href="/index.html" button type="button">Inicio<img class="iconos" src="./image/matillo.png" alt="Inicio"></a></li>
-              <li><a class="btn btn-sm" href="https://ar.pinterest.com/acostamelinaail/herrero/" role="button">pinterest<img class="iconos" src="./image/matillo.png" alt="Mail"></a></li>
+              <li><a class="flex-sm-fill" href="https://ar.pinterest.com/acostamelinaail/herrero/" role="button"><img class="iconos" src="./image/pinterest.png" alt="pinterest iconos creados por Hight Quality Icons"></a></li>
               </ul>
         </div>      
       </div>
