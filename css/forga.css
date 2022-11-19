@@ -17,12 +17,12 @@ ul {
 
 .nav-bar {
   display: flex;
-  background-color: #0e0d0d69;
+  background-color: transparent;
   flex-direction: row;
   align-items: center; }
 
 .navbar {
-  background-color: #0e0d0d69;
+  background-color: rgba(190, 190, 190, 0.438);
   font-family: 'Fredericka the Great', cursive;
   display: flex;
   align-content: space-between; }
@@ -30,15 +30,15 @@ ul {
 .sub_menu {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
-  text-align: center;
-  background-color: #0e0d0d69; }
+  align-items: center;
+  font-size: 20px; }
 
 .sub_menu {
-  background-color: rgba(0, 0, 0, 0.336);
-  font-family: 'Fredericka the Great', cursive; }
+  background-color: transparent;
+  font-family: 'Fredericka the Great', cursive;
+  justify-items: center; }
 
-.link {
+.boton1 {
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -53,56 +53,28 @@ ul {
   border-radius: 10px;
   margin: 2px;
   text-shadow: 5px 5px 5px rgba(223, 32, 32, 0.438); }
-  .link::after, .link::before {
+  .boton1::after, .boton1::before {
     content: '';
     display: block;
     position: absolute;
     transition: width 540ms, opacity 300ms ease; }
 
-.link2 {
+.boton1 {
   height: 56px;
   width: 164px;
   display: grid;
   place-items: center; }
-  .link2-b-tr, .link2-b-bl {
+  .boton1-b-tr, .boton1-b-bl {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%; }
-    .link2-b-tr::before, .link2-b-tr::after, .link2-b-bl::before, .link2-b-bl::after {
+    .boton1-b-tr::before, .boton1-b-tr::after, .boton1-b-bl::before, .boton1-b-bl::after {
       content: '';
       position: absolute;
       background-color: #fd1c14;
       transition: all 400ms ease-in-out; }
-  .link2-b-tr::before {
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px; }
-  .link2-b-tr::after {
-    right: 0;
-    top: 0;
-    height: 0;
-    width: 1px; }
-  .link2-b-bl::before {
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 1px; }
-  .link2-b-bl::after {
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 1px; }
-  .link2:hover {
-    color: #fd1c14; }
-    .link2:hover .link-b-tr::before,
-    .link2:hover .link-b-bl::before {
-      width: 100%; }
-    .link2:hover .link-b-tr::after,
-    .link2:hover .link-b-bl::after {
-      height: 100%; }
 
 @keyframes width {
   0% {
@@ -200,17 +172,38 @@ ul {
   to {
     left: 200px; } }
 
+.logo01 {
+  border: 1px solid #0e0d0d;
+  border: radius 90%;
+  align-items: baseline;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px; }
+
+img:hover {
+  box-shadow: 2px 1px rgba(0, 140, 186, 0.5); }
+
+@media only screen and (max-width: 450px) {
+  header .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1; } }
+
 .titulo1 {
   display: flex;
   position: relative;
   justify-content: center;
-  align-content: center;
-  font-size: 70px;
+  align-items: baseline;
+  font-size: width 100vh;
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
-  background-color: #0e0d0d69;
-  color: #020202;
-  background-color: transparent; }
+  background-color: #050505;
+  color: #f5e9e9; }
 
 .menu {
   background-color: transparent; }
